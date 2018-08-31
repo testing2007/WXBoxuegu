@@ -1,0 +1,35 @@
+<view class="container">
+
+  <!-- 图标logo -->
+  <view class="logo">
+    <image class="logoIcon" src="../../image/login/logo_icon.png"></image>
+    <image class="logoText" src="../../image/login/logo_text.png"></image>
+  </view>
+
+  <!-- 账号/密码  -->
+  <view class="list">
+    <view class="item">
+      <text>账 号:</text>
+      <input type="text" placeholder="请输入账号" placeholder-class='itemPlaceholderClass' focus="true" />
+      <view class="itemSeperateLine"></view>
+    </view>
+    <view class="item">
+      <text>密 码:</text>
+      <input type="text" password="true" placeholder="请输入密码" placeholder-class='itemPlaceholderClass' maxlength="20" />
+      <view class="itemSeperateLine"></view>
+    </view>
+  </view>
+
+  <!-- 登录 -->
+  <view class="loginBtn">
+    <button bindtap="onTapLogin" hover-class="loginButtonHover">登录
+    </button>
+  </view>
+
+  <!-- 跳转至首页 -->
+  <view class="loginBtn">
+    <button bindtap="onTapIndex">首页
+    </button>
+  </view>
+
+</view>

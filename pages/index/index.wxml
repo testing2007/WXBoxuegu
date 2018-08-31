@@ -1,0 +1,40 @@
+<!--pages/index/index.wxml-->
+
+<view class="container">
+  <!-- 广告业 -->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{ads}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item {{item}}">
+          <image src="{{item}}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+<!-- .sectionSeperatorArea {
+  background-color: #F5F5F5;
+  height: 10px;
+}
+
+.sectionHeader {
+  margin: 0px 10px;
+  background: #FFFFFF;
+}
+.sectionHeaderMark {
+  background: #0000FF;
+}
+.sectionHeaderTitle {
+  margin: 0px 5px 0px;
+}
+.sectionHeaderMore {
+  margin: 0px 0px
+} -->
+
+  <view class="sectionSeperatorArea"></view>
+  <view class="sectionHeader">
+    <view class="sectionHeaderMark"></view>
+    <view class="sectionHeaderTitle">就业课</view>
+  </view>
+
+</view>

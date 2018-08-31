@@ -1,0 +1,34 @@
+/* pages/index/index.wxss */
+
+.sectionSeperatorArea {
+  background-color: #F5F5F5;
+  height: 10px;
+}
+
+.sectionHeader {
+  margin: 0px 10px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+}
+.sectionHeaderMark {
+  background: #0000FF;
+  height: 30px;
+  width: 2px;
+}
+.sectionHeaderTitle {
+  margin: 0px 5px 0px 5px;
+  display: flex;
+  align-items:center;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #CCCCCC;
+  line-height: 16px;
+}
+.sectionHeaderMore {
+  margin: 0px 0px
+}
+
+.sectionContent {
+
+}

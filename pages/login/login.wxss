@@ -1,0 +1,71 @@
+/**index.wxss**/
+
+/*logo*/
+.logo {
+  display:flex; 
+  flex-direction:column; 
+  justify-content:space-between; 
+  align-items:center;
+  margin:50px 0px
+}
+
+.logoIcon {
+  width:70px; 
+  height:70px;
+  margin:10px 0px;
+}
+
+.logoText {
+  width:98px; 
+  height:32px;
+}
+
+/*登录账号*/
+.list {
+  margin:0rpx 40rpx;
+}
+
+.item {
+  margin:20rpx 0;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #000000;
+  line-height: 16px;
+
+  display:flex; 
+  flex-direction:row; 
+  align-items: center;
+}
+
+.itemPlaceholderClass {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #CCCCCC;
+  line-height: 16px;
+}
+
+.item input {
+  flex-grow: 1;
+}
+
+.itemSeperateLine {
+  height: 1rpx;
+  margin: 0;
+  background-color:#F5F5F5;
+}
+
+/*登录按钮*/
+.loginBtn {
+  margin: 20rpx 0;
+  background-color: #F5F5F5;
+  height: 50rpx;
+  border-radius: 20rpx;
+}
+
+.loginButtonHover {
+  background-color: #00EE00;
+}
+
+  /* <view class="loginBtn">
+    <button type="primary" bindtap="onTapLogin" hover-class="login_button_hover">登录
+  </button> */
