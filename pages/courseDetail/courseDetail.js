@@ -1,16 +1,11 @@
-// pages/index/index.js
+// pages/courseDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    ads: ['/image/index/1.png', '/image/index/2.png', '/image/index/3.png'],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: true,
-    interval: 2000,
-    duration: 500
+  
   },
 
   /**
@@ -67,12 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-
-  // 点击某就业课
-  onDidSelectCareerItem:function(e) {
-    wx.navigateTo({
-      url: '/pages/courseDetail/courseDetail',
-    })
   }
 })

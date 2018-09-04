@@ -12,29 +12,37 @@
     </block>
   </swiper>
 
-<!-- .sectionSeperatorArea {
-  background-color: #F5F5F5;
-  height: 10px;
-}
-
-.sectionHeader {
-  margin: 0px 10px;
-  background: #FFFFFF;
-}
-.sectionHeaderMark {
-  background: #0000FF;
-}
-.sectionHeaderTitle {
-  margin: 0px 5px 0px;
-}
-.sectionHeaderMore {
-  margin: 0px 0px
-} -->
-
   <view class="sectionSeperatorArea"></view>
+
+  <!-- sectionHeader -->
   <view class="sectionHeader">
-    <view class="sectionHeaderMark"></view>
-    <view class="sectionHeaderTitle">就业课</view>
+    <view class="sectionHeaderLeft">
+      <view class="sectionHeaderMark"></view>
+      <view class="sectionHeaderTitle">就业课</view>
+    </view>
+    <view class="sectionHeaderMore">更多</view>
   </view>
+
+  <!-- 就业课section内容 -->
+  <!-- <view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view> -->
+  <view wx:for="{{[0, 1, 2, 3, 4]}}" wx:key="{{index}}">
+    <view class="sectionContent" catchtap="onDidSelectCareerItem" id="{{ index }}">
+      <image class="sectionContentImage" src='/image/index/courseImage/1.png'></image>
+      <view class="sectionContentDesp">
+        <view class="sectionContentDespUp">
+          <view class='sectionContentDespCourseName'>{{index}}</view>
+          <view class='sectionContentDespCourseDesp'>desp</view>
+        </view>
+        <view class='sectionContentDespLearnedAndTotalTime'>andTotalTime</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 微课section内容 -->
+
+
+
+
+ 
 
 </view>
