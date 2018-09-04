@@ -12,37 +12,50 @@
     </block>
   </swiper>
 
+  <!-- 分割线  -->
   <view class="sectionSeperatorArea"></view>
 
-  <!-- sectionHeader -->
-  <view class="sectionHeader">
-    <view class="sectionHeaderLeft">
-      <view class="sectionHeaderMark"></view>
-      <view class="sectionHeaderTitle">就业课</view>
-    </view>
-    <view class="sectionHeaderMore">更多</view>
-  </view>
-
-  <!-- 就业课section内容 -->
-  <!-- <view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view> -->
-  <view wx:for="{{[0, 1, 2, 3, 4]}}" wx:key="{{index}}">
+  <!-- 就业课heade && section内容 -->
+  <section-header-component courseTypeName="就业课"></section-header-component>
+  <view wx:for="{{ careerCourse }}" wx:key="{{index}}">
     <view class="sectionContent" catchtap="onDidSelectCareerItem" id="{{ index }}">
-      <image class="sectionContentImage" src='/image/index/courseImage/1.png'></image>
+      <!-- <image class="sectionContentImage" src='/image/index/courseImage/1.png'></image> -->
+      <image class="sectionContentImage" src='{{item.courseImg}}'></image>
       <view class="sectionContentDesp">
         <view class="sectionContentDespUp">
-          <view class='sectionContentDespCourseName'>{{index}}</view>
-          <view class='sectionContentDespCourseDesp'>desp</view>
+          <view class='sectionContentDespCourseName'>{{item.courseName}}</view>
+          <view class='sectionContentDespCourseDesp'>{{item.description}}</view>
         </view>
         <view class='sectionContentDespLearnedAndTotalTime'>andTotalTime</view>
       </view>
     </view>
   </view>
 
-  <!-- 微课section内容 -->
+  <!-- 微课header && section内容 -->
+  <section-header-component courseTypeName="微课"></section-header-component>
+  <view class='microSetionContainer'>
+    <block wx:for="{{ [0, 1, 2] }}" wx:for-index="idx" wx:key="{{index}}">
+      <view class="microSetionRowItem" id="{{ idx%2 }}">
+        <block wx:if="{{ idx%2==0}}">
+          <view class="microSectionContentLeft" catchtap="onDidSelectMicroItem" id="{{ idx }}">
+            <image class="sectionContentImage" src='/image/index/courseImage/1.png'></image>
+            <view class='sectionContentDespCourseName'>{{idx}}</view>
+            <view class='sectionContentDespLearnedAndTotalTime'>andTotalTime</view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="microSectionContentRight" catchtap="onDidSelectMicroItem" id="{{ idx }}">
+            <image class="sectionContentImage" src='/image/index/courseImage/1.png'></image>
+            <view class='sectionContentDespCourseName'>{{idx}}</view>
+            <view class='sectionContentDespLearnedAndTotalTime'>andTotalTime</view>
+          </view>
+        </block>
+      </view>
+    </block>
+  </view>
 
 
 
 
- 
 
 </view>

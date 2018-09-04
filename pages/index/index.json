@@ -1,3 +1,7 @@
 {
-  "navigationBarTitleText": "首页"
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "section-header-component":"/pages/index/sectionHeaderComponent/sectionHeader"
+  },
+  "enablePullDownRefresh": true
 }
