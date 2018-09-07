@@ -1,10 +1,10 @@
-// pages/index.js
+// pages/index/sectionHeaderComponent/sectionHeader.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    courseTypeName:String,
   },
 
   /**

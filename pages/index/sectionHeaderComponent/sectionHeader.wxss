@@ -1,0 +1,77 @@
+/* pages/index/sectionHeaderComponent/sectionHeader.wxss */
+
+
+.sectionHeader {
+  margin: 0px 10px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 46px;
+}
+
+/* .sectionHeaderLeft {
+  margin: 0px 0px;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.sectionHeaderMark {
+  height: 15px;
+  width: 2px;
+  background: #38ADFF;
+}
+.sectionHeaderTitle {
+  flex-grow: 1;
+  margin: 0px 5px 0px 5px;
+  display: flex;
+  align-items:center;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #333333;
+  line-height: 16px;
+}
+.sectionHeaderMore {
+  align-items:center;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #333333;
+  line-height: 12px;
+  margin-right:10px;
+}
+
+/* .sectionHeader {
+  margin: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+}
+
+.sectionHeaderLeft {
+  margin: 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionHeaderMark {
+  height: 15px;
+  width: 2px;
+  background: #38ADFF;
+}
+.sectionHeaderTitle {
+  margin: 0px 5px 0px 5px;
+  display: flex;
+  align-items:center;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #333333;
+  line-height: 16px;
+}
+.sectionHeaderMore {
+  display: flex;
+  align-items:center;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #333333;
+  line-height: 12px;
+} */

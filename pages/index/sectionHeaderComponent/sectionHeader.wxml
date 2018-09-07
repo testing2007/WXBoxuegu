@@ -1,0 +1,15 @@
+<!--pages/index/sectionHeaderComponent/sectionHeader.wxml-->
+  <!-- sectionHeader -->
+  <!-- <view class="sectionHeader">
+    <view class="sectionHeaderLeft">
+      <view class="sectionHeaderMark"></view>
+      <view class="sectionHeaderTitle">{{courseTypeName}}</view>
+    </view>
+    <view class="sectionHeaderMore">更多</view>
+  </view> -->
+
+  <view class="sectionHeader">
+      <view class="sectionHeaderMark"></view>
+      <view class="sectionHeaderTitle">{{courseTypeName}}</view>
+    <view class="sectionHeaderMore">更多</view>
+  </view>

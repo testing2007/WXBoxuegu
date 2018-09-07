@@ -32,8 +32,8 @@ Page({
       url: 'http://localhost:5000/user/Nicholas',
       method: 'GET',
       success: function(res) {
-        app.globalData.userInfo = res.data
-        console.log(res.data)
+        app.globalData.userInfo = res.data;
+        console.log(res.data);
         that.setData({
           userInfo:res.data,
           hasUserInfo: true
